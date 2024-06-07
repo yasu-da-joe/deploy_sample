@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  text-align: center;
+  margin: 20px;
+}
+.controls {
+  margin-bottom: 20px;
+}
+.sliders {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.slider-container {
+  text-align: center;
+}
+.slider {
+  transform: rotate(-90deg);
+  width: 150px;
+  margin-top: 20px;
+}
+.save-controls {
+  margin-top: 20px;
+}
