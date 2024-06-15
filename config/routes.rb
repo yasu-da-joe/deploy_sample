@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   resources :tuning, only: [:index]
-  resources :unisons, only: [:create]
+  resources :unisons, only: [:new, :create]
   root "tuning#index"
 end
