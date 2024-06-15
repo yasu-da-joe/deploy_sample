@@ -1,13 +1,36 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #fdfdfd;
 }
+
+.header-link{
+  font-size: 20px;
+  font-weight: bold;
+  color:black;
+}
+
 .container {
   text-align: center;
-  margin: 20px;
+  margin: 20px auto 30px auto;
 }
-.controls {
+
+.explain{
+  text-align: center;
+  font-size: 16px;
   margin-bottom: 20px;
 }
+
+.controls {
+  margin-top:30px;
+  margin-bottom: 20px;
+}
+
+#base-play{
+  padding: 5px 10px;
+  border: solid 1px;
+  border-radius: 5px;
+}
+
 .sliders {
   display: flex;
   justify-content: space-around;
@@ -19,8 +42,13 @@ body {
 .slider {
   transform: rotate(-90deg);
   width: 150px;
-  margin-top: 20px;
+  margin-top:100px;
+  margin-bottom:100px;
 }
 .save-controls {
   margin-top: 20px;
+}
+
+.copyright{
+  margin:30px;
 }
