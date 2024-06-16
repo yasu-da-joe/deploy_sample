@@ -1,12 +1,17 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #fdfdfd;
+  color: #333;
 }
 
 .header-link{
   font-size: 20px;
   font-weight: bold;
   color:black;
+  margin:20px;
+}
+.navbar{
+  background-color: #eee;
 }
 
 .fa-circle-play{
@@ -25,11 +30,10 @@ body {
 }
 
 .tuning-steps{
-  margin: 20px auto;
+  margin: 20px auto 10px auto;
 }
 
 .controls {
-  margin-top:30px;
   margin-bottom: 20px;
 }
 
@@ -41,10 +45,6 @@ body {
 
 #base-play:hover{
   background-color: #ddd;
-}
-
-.tuning-steps{
-  margin: auto;
 }
 
 .sliders {
@@ -83,6 +83,10 @@ body {
   background-color: #ccc;
 }
 
+.footer-bottom{
+  background-color: #ccc;
+}
+
 .copyright{
-  margin:30px;
+  padding:30px;
 }
