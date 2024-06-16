@@ -9,6 +9,10 @@ body {
   color:black;
 }
 
+.fa-circle-play{
+  margin-right: 5px;
+}
+
 .container {
   text-align: center;
   margin: 20px auto 30px auto;
@@ -20,6 +24,10 @@ body {
   margin-bottom: 20px;
 }
 
+.tuning-steps{
+  margin: 20px auto;
+}
+
 .controls {
   margin-top:30px;
   margin-bottom: 20px;
@@ -29,6 +37,14 @@ body {
   padding: 5px 10px;
   border: solid 1px;
   border-radius: 5px;
+}
+
+#base-play:hover{
+  background-color: #ddd;
+}
+
+.tuning-steps{
+  margin: auto;
 }
 
 .sliders {
@@ -47,6 +63,24 @@ body {
 }
 .save-controls {
   margin-top: 20px;
+}
+
+#play-unison{
+  margin-top: 20px;
+  padding: 5px 10px;
+  border: solid 1px;
+  border-radius: 5px;
+}
+
+#play-unison:hover{
+  background-color: #ddd;
+}
+
+#save-button{
+  padding: 5px 10px;
+  border: solid 1px;
+  border-radius: 5px;
+  background-color: #ccc;
 }
 
 .copyright{

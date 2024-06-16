@@ -6,9 +6,16 @@
         <p>ピッタリ合わせるのが目標ですが、あんまりぴったりすぎてもつまらない音になってしまいます</p>
         <p>自分だけの「ユニゾン」を作ってみましょう！</p>
     </div>
+    <div class="tuning-steps">
+        <p><i class="fa-solid fa-1"></i> まずは1本だけ（正弦波）の音を聴いてみましょう！</p>
+    </div>
     <div class="controls">
-        <button id="base-play">Play</button>
+        <button id="base-play"><i class="fa-solid fa-circle-play"></i>Play</button>
         <label for="base-frequency">基音を聞く (442Hz)</label>
+    </div>
+    <div class="tuning-steps">
+        <p>次に、左の弦のスライダーを上下に動かして、2つの音がずれるとどうなるのか、試してみましょう。</p>
+        <p>最後に、右の弦のスライダーを上下に動かしてみましょう。真ん中の弦と、左の弦の音も一緒に鳴ります</p>
     </div>
     <div class="sliders">
         <div class="slider-container">
@@ -24,12 +31,15 @@
             <input type="range" id="right-string" class="slider" min="440" max="444" step="0.03">
         </div>
     </div>
+    <div class="tuning-steps">
+        <p>最後に、出来上がった音を聴いてみましょう。ぴったり合ってると思っても、時間がたつとちょっとずつズレが出てきたり、面白い音ができると思います。</p>
+        <button id="play-unison"><i class="fa-solid fa-circle-play"></i>作ったユニゾンを聞く</button>
+    </div>
     <div class="save-controls">
         <%= form_with url: unisons_path, method: :post, local: true, id: "unison-form" do |form| %>
-            <%= form.hidden_field :left_frequency, id: "left-frequency" %>
-            <%= form.hidden_field :right_frequency, id: "right-frequency" %>
-            <%= form.submit "保存", id: "save-button" %>
-        <% end %>        
-        <button id="play-unison">作ったユニゾンを聞く</button>
-    </div>
+        <%= form.hidden_field :left_frequency, id: "left-frequency" %>
+        <%= form.hidden_field :right_frequency, id: "right-frequency" %>
+        <%= form.submit "保存(準備中)", id: "save-button" %>
+        <% end %>   
+    </div> 
 </div>

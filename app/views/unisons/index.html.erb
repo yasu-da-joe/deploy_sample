@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <th>名前</th>
+      <th>左周波数</th>
+      <th>右周波数</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @unisons.each do |unison| %>
+      <tr>
+        <td><%= unison.name %></td>
+        <td><%= unison.left_frequency %></td>
+        <td><%= unison.right_frequency %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
